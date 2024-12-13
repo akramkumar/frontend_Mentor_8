@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Manrope:wght@200..800&family=Outfit:wght@100..900&display=swap');
+*{
+    font-family: Manrope;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+}
+.article-card{
+    
+    height:225px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    border-radius: 10px;
+}
+img{
+    border-radius: 10px 0px 0px 10px;
+    height: 225px;
+    width:250px;
+}
+.article-content{
+    padding: 25px;
+}
+.article-title{
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+}
+.article-description{
+    padding-top: 15px;
+    font-weight: 600;
+    color: hsl(212, 23%, 69%);
+    font-size: 11px;
+}
+.article-footer{
+    padding-top: 15px;
+    display: grid;
+    grid-template-columns: 35px 1.5fr 1fr;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.article-description{
+    gap: 10px;
+}
+.footer-img img{
+    height: auto;
+    width: 35px;
+    border-radius: 50%;
+}
+.footer-title{
+    font-weight: 700;
+    color: hsl(217, 19%, 35%);
+    font-size: 11px;
+}
+.footer-date{
+    font-weight: 600;
+    color: hsl(212, 23%, 69%);
+    font-size: 11px;
+}
+.footer-icon{
+    height: 25px;
+    width: 25px;
+    align-self: center;
+    justify-self:flex-end;
+    padding-left: 5%;
+    border-radius: 50%;
+    background-color:hsl(210, 46%, 95%);
+}
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 650px){
+    .article-card{
+        height: 445px;
+        width: 270px;
+        display: flex;
+        flex-direction: column;
+    }
+    body{
+        padding-top: 150px;
+    }
+    img {
+        border-radius: 10px 10px 0px 0px;
+        height: 185px;
+        width: 270px;
+    }
+    .article-footer{
+        grid-template-columns: 35px 2fr 1fr;
+    }
+}
